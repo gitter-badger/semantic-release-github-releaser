@@ -1,0 +1,70 @@
+{
+  "author": {
+    "name": "Hutson Betts",
+    "email": "hutson@hyper-expanse.net",
+    "url": "https://github.com/hbetts"
+  },
+  "bin": {},
+  "bugs": "https://github.com/hbetts/semantic-release-github-releaser/issues",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "semantic-release plugin that creates a git tag and a GitHub release entry.",
+  "engines": {
+    "node": "^4.1.0 || ^0.12.0",
+    "npm": "^3.0.0 || ^2.1.9"
+  },
+  "files": [
+    "src/"
+  ],
+  "homepage": "https://github.com/hbetts/semantic-release-github-releaser#readme",
+  "keywords": [
+    "semantic-release",
+    "github",
+    "notice"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "name": "semantic-release-github-releaser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbetts/semantic-release-github-releaser.git"
+  },
+  "scripts": {
+    "docs": "gulp docs",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "gulp"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "@bahmutov/parse-github-repo-url": "^0.1.0",
+    "bluebird": "^3.2.2",
+    "conventional-commits-parser": "^1.0.1",
+    "github": "^0.2.4",
+    "lodash": "^4.0.1",
+    "stream-array": "^1.1.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "codecov": "^1.0.1",
+    "cz-conventional-changelog": "^1.1.4",
+    "del": "^2.0.2",
+    "gulp": "^3.4.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jscs": "^3.0.0",
+    "gulp-jsdoc3": "^0.1.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "nock": "^7.0.2",
+    "proxyquire": "^1.7.3",
+    "semantic-release": "^4.3.5",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  }
+}
