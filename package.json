@@ -39,13 +39,7 @@
   },
   "version": "1.0.0",
   "dependencies": {
-    "@bahmutov/parse-github-repo-url": "^0.1.0",
-    "bluebird": "^3.2.2",
-    "conventional-commits-parser": "^1.0.1",
-    "github": "^0.2.4",
-    "lodash": "^4.0.1",
-    "stream-array": "^1.1.1",
-    "through2": "^2.0.0"
+    "conventional-github-releaser": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.0",
