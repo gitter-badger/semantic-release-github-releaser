@@ -87,9 +87,10 @@ gulp.task('jscs', function () {
  */
 gulp.task('docs', ['clean:docs'], function (done) {
   var jsdoc = require('gulp-jsdoc3');
+  var config = JSON.parse(require('fs').readFileSync('./.jsdocrc'));
 
   gulp.src(paths.documentationFiles, { read: false })
-    .pipe(jsdoc(JSON.parse(require('fs').readFileSync('./.jsdocrc'))), done)
+    .pipe(jsdoc(config, done))
   ;
 });
 
@@ -107,8 +108,8 @@ gulp.task('jshint', function () {
 });
 
 /*
- * Watch for file changes to either source, or test, files, and execute the appropriate task(s) associated with the
- * changed file(s).
+ * Watch for file changes to either source, or test, files, and execute the appropriate task(s)
+ * associated with the changed file(s).
  */
 gulp.task('serve', ['default'], function () {
   var watch = require('gulp-watch');
