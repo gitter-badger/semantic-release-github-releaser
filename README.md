@@ -1,5 +1,7 @@
 # semantic-release-github-releaser
 
+[![Join the chat at https://gitter.im/hbetts/semantic-release-github-releaser](https://badges.gitter.im/hbetts/semantic-release-github-releaser.svg)](https://gitter.im/hbetts/semantic-release-github-releaser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/hbetts/semantic-release-github-releaser.svg?branch=master)](https://travis-ci.org/hbetts/semantic-release-github-releaser)
 [![codecov.io](https://codecov.io/github/hbetts/semantic-release-github-releaser/coverage.svg?branch=master)](https://codecov.io/github/hbetts/semantic-release-github-releaser?branch=master)
 [![Dependency Status](https://david-dm.org/hbetts/semantic-release-github-releaser.svg)](https://david-dm.org/hbetts/semantic-release-github-releaser)
